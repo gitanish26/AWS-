@@ -1,0 +1,50 @@
+s3
+***
+1)Buckets(Directory):
+===================
+Buckets(Directory) : Where we are putting objects(files)
+
+Buckets must be defined @Regional level
+
+Globally unique name.
+--------------------------------------------
+2)Objects:(Files)
+================
+Identified by key. 
+
+Key is full path
+
+<my_bucket>/my_file.txt
+
+Max size : 5TB
+
+>5TB you need to enable "Multi part upload"
+--------------------------
+
+3)AWS s3 - Versioning
+====================
+Its enabled @bucket level. Its used to protect unintended deletes
+
+Easy to Roll back to previous version
+
+4)AWS s3- Encryption
+======================
+
+AES -256 (Server side encryption) Keys managed by amazon
+
+AWS-KMS  keys are managed by KMS
+
+5)s3 websites
+***************
+s3 can host static websites and accessed via www
+
+URL will be : <bucketname>.s3-website-<AWS Region>.amazonnews.com
+<bucketname>.s3-website.<AWS Region>.amazonnews.com
+
+6)CORS(Cross Origin Resource Sharing)
+--------------------------------------
+can limit the number of websites that request s3 
+
+
+
+
