@@ -1,0 +1,41 @@
+Three types:
+1.Classic
+2.Application
+3.Network
+
+Classic LB are deprecated- No longer in use
+
+1.Application LB: 
+******************
+
+Layer 7 Load Balancer
+
+Load Balance Multiple Applications on same machine.
+
+Uses http,https 
+
+Example : Docker
+
+
+The ALB can't see the IP. The true ip is inserted to x-forwarded-for
+
+
+Same user == Same instance (Stickiness)
+--------------------------------------------
+
+2.Network LB:
+*************
+
+Layer 4 LB
+
+Super High Performance LB can handle millinons of requests per second.
+
+uses TCP
+
+can see the client IP
+
+4xx - client induced errors.
+5xx- Application induced errors. ex: 503 means capacity error.
+
+All the LB have static host names.
+
